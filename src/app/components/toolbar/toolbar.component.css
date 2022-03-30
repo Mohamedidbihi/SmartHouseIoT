@@ -1,0 +1,17 @@
+.navbar{
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 150px;
+    justify-content: space-between;
+    background-color: transparent;
+    font-weight: bold;
+}
+.nablist{
+    flex: 1 1 auto;
+}
+.primary-color {
+    color: #e296de;
+}
+.primary-background{
+    background-color: #e296de;
+}

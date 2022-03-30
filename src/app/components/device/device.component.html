@@ -1,0 +1,29 @@
+
+
+<div class="new">
+       <button mat-fab class="plusButton"><mat-icon class="plusIcon">add_circle</mat-icon></button>
+</div>
+
+<div>
+    <mat-card class="card"[ngStyle]="{'background': count? '#caebd4':'#edd0c8'}" >
+    <div class="container">
+   <div class="cont" [ngSwitch]="count">
+            <button mat-fab *ngSwitchCase="0"[ngStyle]="{'background': count? '#56caa5':'#f34235'}" ><mat-icon class="matIcon">stop</mat-icon></button>   
+            <button mat-fab *ngSwitchCase="1"[ngStyle]="{'background': count? '#56caa5':'#f34235'}" ><mat-icon class="matIcon">play_arrow</mat-icon></button>   
+       <div class="device">
+           <p>Device :<b> Lamp</b></p>
+           <p>Room :<b> Bedroom</b></p>
+           <p>Floor :<b> Floor 1</b></p>
+           <p>Status :<b> ON</b></p>
+       </div>
+    </div>
+       <div class="right">
+        <button mat-fab color="warn" aria-label="delete icon">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <a href="">More info....</a>
+       </div>
+    </div>
+      </mat-card>
+</div>
+

@@ -1,0 +1,48 @@
+.card {
+
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+.matIcon , .plusIcon{
+        transform: scale(2);   
+     }
+
+.plusButton{
+
+    background-color: #43b05c;
+    width: 80px;
+    height: 80px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.right{
+    display: grid;
+    width: 90px;
+}
+.card .cont button{
+    margin-top: 36px;
+    width: 80px;
+    height: 80px;
+}
+a{
+    color: blue;
+    position: absolute;
+    bottom: 10%;
+}
+.cont{
+    display: flex;
+    justify-content: right;
+}
+.device{
+    padding-left: 30px;
+}
+.new {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
