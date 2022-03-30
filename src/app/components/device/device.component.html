@@ -4,17 +4,17 @@
        <button mat-fab class="plusButton"><mat-icon class="plusIcon">add_circle</mat-icon></button>
 </div>
 
-<div>
-    <mat-card class="card"[ngStyle]="{'background': count? '#caebd4':'#edd0c8'}" >
+<div class="device" *ngFor="let device of ResultSearch">
+    <mat-card class="card"[ngStyle]="{'background': device.status? '#caebd4':'#edd0c8'}" >
     <div class="container">
-   <div class="cont" [ngSwitch]="count">
-            <button mat-fab *ngSwitchCase="0"[ngStyle]="{'background': count? '#56caa5':'#f34235'}" ><mat-icon class="matIcon">stop</mat-icon></button>   
-            <button mat-fab *ngSwitchCase="1"[ngStyle]="{'background': count? '#56caa5':'#f34235'}" ><mat-icon class="matIcon">play_arrow</mat-icon></button>   
+   <div class="cont" [ngSwitch]=" device.status ">
+            <button mat-fab *ngSwitchCase="0" style="background:'#f34235'" (click)="statusDevice(device)" ><mat-icon class="matIcon">stop</mat-icon></button>   
+            <button mat-fab *ngSwitchCase="1"  style="background:'#56caa5'" (click)="statusDevice(device)"><mat-icon class="matIcon">play_arrow</mat-icon></button>   
        <div class="device">
-           <p>Device :<b> Lamp</b></p>
-           <p>Room :<b> Bedroom</b></p>
-           <p>Floor :<b> Floor 1</b></p>
-           <p>Status :<b> ON</b></p>
+           <p>Device :<b> {{ device.device }}</b></p>
+           <p>Room :<b> {{ device.room }}</b></p>
+           <p>Floor :<b> {{ device.floor }}</b></p>
+           <p>Status :<b> {{ device.status }}</b></p>
        </div>
     </div>
        <div class="right">

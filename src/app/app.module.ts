@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DeviceComponent } from './components/device/device.component';
 import { CommonModule } from '@angular/common';
 import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-in.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,8 +36,8 @@ import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-i
     MatCardModule,
     CommonModule,
     MatDialogModule,
-    MatFormFieldModule
-  ],
+    MatFormFieldModule,
+    HttpClientModule],
    entryComponents:[
      DialogSignInComponent
    ],
