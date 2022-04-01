@@ -32,6 +32,7 @@ a{
     color: blue;
     position: absolute;
     bottom: 10%;
+    cursor: pointer;
 }
 .cont{
     display: flex;

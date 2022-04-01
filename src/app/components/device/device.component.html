@@ -1,7 +1,7 @@
 
 
 <div class="new">
-       <button mat-fab class="plusButton"><mat-icon class="plusIcon">add_circle</mat-icon></button>
+       <button mat-fab class="plusButton" (click)="showAdd()"><mat-icon class="plusIcon">add_circle</mat-icon></button>
 </div>
 
 <div class="device" *ngFor="let device of ResultSearch">
@@ -18,10 +18,10 @@
        </div>
     </div>
        <div class="right">
-        <button mat-fab color="warn" aria-label="delete icon">
+        <button mat-fab color="warn" aria-label="delete icon" (click)="deleteDevice(device.id)">
             <mat-icon>delete</mat-icon>
           </button>
-          <a href="">More info....</a>
+          <a  (click)="showDetails(device)">More info...</a>
        </div>
     </div>
       </mat-card>

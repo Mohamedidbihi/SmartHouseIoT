@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Add new device to your home</h1><mat-icon class="home-icon">home</mat-icon>
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name device</mat-label>
+          <input matInput placeholder="Device ..." [(ngModel)]="device.device">
+          <mat-icon matSuffix class="white-icon">devices_other</mat-icon>
+        </mat-form-field>
+    </p>
+
+    <mat-form-field class="" appearance="fill">
+        <input matInput  type="number" placeholder="Floor" [(ngModel)]="device.floor">
+      </mat-form-field>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Room name </mat-label>
+          <input matInput placeholder="Room ..." [(ngModel)]="device.room">
+          <mat-icon matSuffix class="white-icon" >meeting_room</mat-icon>
+        </mat-form-field>
+    </p>
+    
+  <button mat-flat-button (click)="addDevice()" >New device <mat-icon  >add_to_queue</mat-icon></button>
+
+
+      
+</div>

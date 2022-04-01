@@ -1,18 +1,46 @@
 {
   "devices": [
     {
-      "id": 2,
-      "device": "lamp",
-      "room": "Room 12",
-      "floor": 2,
-      "status": false
-    },
-    {
-      "id": 8,
+      "id": 1,
       "device": "TV",
       "room": "Room 2",
       "floor": 1,
-      "status": false
+      "status": true
+    },
+    {
+      "device": "Med idbihi",
+      "room": "room1",
+      "floor": 2,
+      "status": true,
+      "id": 4
+    },
+    {
+      "device": "ELATTARI",
+      "room": "YOUCODE",
+      "floor": 2,
+      "status": true,
+      "id": 5
+    },
+    {
+      "device": "OUCHEN",
+      "room": "OUCHENEE",
+      "floor": 3,
+      "status": false,
+      "id": 6
+    },
+    {
+      "device": "test",
+      "room": "room1",
+      "floor": 2,
+      "status": false,
+      "id": 7
+    },
+    {
+      "device": "",
+      "room": "",
+      "floor": "",
+      "status": true,
+      "id": 8
     }
   ]
 }
